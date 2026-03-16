@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, ArrowDown, Globe } from "lucide-react";
 import { personalInfo } from "../data/portfolio";
 
 export default function Hero() {
@@ -75,6 +75,7 @@ export default function Hero() {
             {[
               { icon: Github, href: personalInfo.github, label: "GitHub" },
               { icon: Linkedin, href: personalInfo.linkedin, label: "LinkedIn" },
+              { icon: Globe, href: personalInfo.fortynx, label: "FortyNx" },
               { icon: Mail, href: `mailto:${personalInfo.email}`, label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
@@ -110,8 +111,8 @@ export default function Hero() {
 
               <div className="z-10 text-center">
                 <p className="font-syne font-bold text-white text-base">Bhargavkrishna</p>
-                <p className="text-[#00e5c0] text-xs mt-0.5 tracking-wide">Full Stack Developer</p>
-                <p className="text-[#5c6e87] text-xs mt-0.5">Hyderabad, India</p>
+                <p className="text-[#00e5c0] text-xs mt-0.5 tracking-wide">Full Stack Developer & AI Engineer</p>
+                <p className="text-[#5c6e87] text-xs mt-0.5">Srikakulam, India</p>
               </div>
 
               {/* Stats row */}
@@ -127,7 +128,7 @@ export default function Hero() {
 
             {/* Status pill */}
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#0e1520] border border-[#00e5c0]/30 text-[#00e5c0] text-xs px-4 py-1.5 rounded-full shadow-lg">
-              ✦ Available for Freelance
+              ✦ Open to Partnerships
             </div>
           </div>
         </div>

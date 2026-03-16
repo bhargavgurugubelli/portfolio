@@ -78,7 +78,7 @@ export default function Contact() {
           {/* Availability banner */}
           <div className="rounded-xl border border-[#00e5c0]/20 bg-[#00e5c0]/[0.04] p-4 text-sm text-[#00e5c0] flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#00e5c0] animate-pulse flex-shrink-0" />
-            I'm actively looking for freelance and full-time opportunities.
+            I'm actively seeking strategic partnerships and collaboration opportunities.
           </div>
         </div>
 

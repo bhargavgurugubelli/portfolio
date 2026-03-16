@@ -1,19 +1,28 @@
 import { skills } from "../data/portfolio";
 import { SectionHeader } from "./About";
 
-function SkillBar({ name, level }) {
+function SkillBar({ name, proficiency }) {
+  const getProficiencyColor = (level) => {
+    switch (level) {
+      case "Expert":
+        return "bg-green-500/10 border-green-500/30 text-green-400";
+      case "Advanced":
+        return "bg-blue-500/10 border-blue-500/30 text-blue-400";
+      case "Intermediate":
+        return "bg-yellow-500/10 border-yellow-500/30 text-yellow-400";
+      case "Beginner":
+        return "bg-gray-500/10 border-gray-500/30 text-gray-400";
+      default:
+        return "bg-[#4f8eff]/[0.08] border-[#4f8eff]/20 text-[#4f8eff]";
+    }
+  };
+
   return (
-    <div className="mb-4">
-      <div className="flex justify-between text-sm mb-1.5">
-        <span className="text-[#c8d4e8] font-medium">{name}</span>
-        <span className="text-[#7a8ba8]">{level}%</span>
-      </div>
-      <div className="h-1.5 bg-white/[0.05] rounded-full overflow-hidden">
-        <div
-          className="h-full rounded-full bg-gradient-to-r from-[#4f8eff] to-[#00e5c0] skill-fill"
-          style={{ width: `${level}%` }}
-        />
-      </div>
+    <div className="flex items-center justify-between bg-[#111827] border border-white/[0.07] rounded-lg px-3 py-2 mb-2 mr-2 transition-all duration-200 hover:border-[#4f8eff]/35">
+      <span className="text-[#c8d4e8] font-medium text-sm">{name}</span>
+      <span className={`text-xs px-2 py-0.5 rounded-full border ${getProficiencyColor(proficiency)}`}>
+        {proficiency}
+      </span>
     </div>
   );
 }
@@ -39,13 +48,15 @@ export default function Skills() {
             key={group.category}
             className="glow-card bg-[#111827] rounded-2xl p-6"
           >
-            <h3 className="font-syne font-bold text-white flex items-center gap-2 mb-5">
+            <h3 className="font-syne font-bold text-white flex items-center gap-2 mb-4">
               <span className="text-xl">{group.icon}</span>
               {group.category}
             </h3>
-            {group.items.map((s) => (
-              <SkillBar key={s.name} name={s.name} level={s.level} />
-            ))}
+            <div className="space-y-1">
+              {group.items.map((s) => (
+                <SkillBar key={s.name} name={s.name} proficiency={s.proficiency} />
+              ))}
+            </div>
           </div>
         ))}
       </div>

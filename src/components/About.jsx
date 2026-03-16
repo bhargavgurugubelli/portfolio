@@ -1,4 +1,4 @@
-import { personalInfo, education } from "../data/portfolio";
+import { personalInfo } from "../data/portfolio";
 
 function SectionHeader({ label, title, desc }) {
   return (
@@ -50,25 +50,6 @@ export default function About() {
         ))}
       </div>
 
-      {/* Education */}
-      <SectionHeader label="Background" title="Education" />
-      <div className="space-y-4">
-        {education.map((edu) => (
-          <div
-            key={edu.degree}
-            className="glow-card bg-[#111827] rounded-xl p-5 flex items-start gap-4"
-          >
-            <div className="w-12 h-12 rounded-xl bg-[#4f8eff]/[0.08] border border-[#4f8eff]/20 flex items-center justify-center text-2xl flex-shrink-0">
-              {edu.icon}
-            </div>
-            <div>
-              <p className="font-syne font-bold text-white text-base">{edu.degree}</p>
-              <p className="text-[#7a8ba8] text-sm mt-0.5">{edu.institution}</p>
-              <p className="text-[#4f8eff] text-xs mt-1.5 font-medium">{edu.year}</p>
-            </div>
-          </div>
-        ))}
-      </div>
     </section>
   );
 }

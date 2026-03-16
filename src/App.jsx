@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
+import TrustedCompanies from "./components/TrustedCompanies";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -33,6 +34,8 @@ export default function App() {
       <Services />
       <Divider />
       <Projects />
+      <Divider />
+      <TrustedCompanies />
       <Divider />
       <Certifications />
       <Divider />

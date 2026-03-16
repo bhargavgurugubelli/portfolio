@@ -9,7 +9,7 @@ export default function Services() {
         title="Services"
         desc="Areas where I can help you build and ship real software."
       />
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
         {services.map((svc, i) => (
           <div
             key={svc.title}

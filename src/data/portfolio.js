@@ -1,11 +1,11 @@
 export const personalInfo = {
   name: "Gurugubelli Bhargavkrishna",
   shortName: "Bhargavkrishna",
-  title: "Full Stack Developer & AI & ML Engineer",
-  tagline: "Building real-world apps with React, Django, Flutter & Machine Learning",
+  title: "Full Stack Developer & AI&ML Engineer",
+  tagline: "Building FortyNx - Professional web services and digital solutions for businesses",
   about:
-    "I'm a passionate full-stack developer with a strong foundation in web, mobile, and machine learning. I love turning complex problems into clean, functional solutions. Currently seeking opportunities to apply my skills in real-world projects and grow as a developer.",
-  location: "Hyderabad, India",
+    "I'm a passionate entrepreneur and full-stack developer who founded FortyNx, a startup specializing in comprehensive web services and digital solutions. With expertise in React, Django, Flutter, and Machine Learning, I lead the development of cutting-edge web applications, ecommerce platforms, and mobile solutions that drive business growth. Currently leading FortyNx's mission to deliver exceptional digital experiences for businesses worldwide.",
+  location: "Srikakulam, India",
   email: "gurugubellibhargav@gmail.com",
   phone: "+91 7901247450",
   dob: "August 22, 2002",
@@ -13,47 +13,39 @@ export const personalInfo = {
   github: "https://github.com/bhargavgurugubelli",
   linkedin: "#",
   whatsapp: "https://wa.me/917901247450",
+  fortynx: "https://fortynx.in",
   portfolio: "https://bhargavgurugubelli.github.io/portfolio-website/",
 };
-
-export const education = [
-  {
-    degree: "BTech in Computer Science & Engineering",
-    institution: "Visakha Institute of Engineering and Technology",
-    year: "2021 – 2024",
-    icon: "🎓",
-  },
-  
-];
 
 export const skills = [
   {
     category: "Frontend",
     icon: "🖥️",
     items: [
-      { name: "HTML5", level: 85 },
-      { name: "CSS3", level: 95 },
-      { name: "JavaScript", level: 90 },
-      { name: "ReactJS", level: 80 },
+      { name: "HTML5", proficiency: "Expert" },
+      { name: "CSS3", proficiency: "Expert" },
+      { name: "JavaScript", proficiency: "Expert" },
+      { name: "ReactJS", proficiency: "Advanced" },
+      { name: "UI/UX", proficiency: "Advanced" },
     ],
   },
   {
     category: "Backend",
     icon: "⚙️",
     items: [
-      { name: "Python", level: 90 },
-      { name: "Django", level: 80 },
-      { name: "SQL", level: 70 },
+      { name: "Python", proficiency: "Expert" },
+      { name: "Django", proficiency: "Advanced" },
+      { name: "SQL", proficiency: "Advanced" },
     ],
   },
   {
     category: "Mobile & ML",
     icon: "📱",
     items: [
-      { name: "Flutter", level: 72 },
-      { name: "Machine Learning", level: 68 },
-      { name: "AI", level: 70 },
-      { name: "Image Processing", level: 65 },
+      { name: "Flutter", proficiency: "Advanced" },
+      { name: "Machine Learning", proficiency: "Advanced" },
+      { name: "AI", proficiency: "Advanced" },
+      { name: "Image Processing", proficiency: "Intermediate" },
     ],
   },
 ];
@@ -162,23 +154,51 @@ export const certifications = [
 
 export const services = [
   {
-    title: "Web Development",
-    desc: "Creating responsive websites using HTML, CSS, JS, Django & React.",
+    title: "Custom Website Development",
+    desc: "Building responsive, brand-aligned websites tailored to your business goals.",
     icon: "🌐",
   },
   {
-    title: "App Development",
-    desc: "Building mobile apps using Flutter and integrating with Django APIs.",
-    icon: "📲",
+    title: "Ecommerce Development",
+    desc: "Creating conversion-focused ecommerce platforms with secure payments and smooth workflows.",
+    icon: "🛒",
   },
   {
-    title: "Machine Learning",
-    desc: "Working on ML models for real-world classification and detection tasks.",
-    icon: "🤖",
+    title: "Web Application Development",
+    desc: "Delivering scalable web apps with modern frameworks and clean architecture.",
+    icon: "⚙️",
   },
   {
-    title: "Academic Projects",
-    desc: "Full-stack, ML, and utility apps built to solve practical problems.",
-    icon: "📚",
+    title: "UI/UX Design",
+    desc: "Crafting engaging user experiences with polished interfaces and user-centric design.",
+    icon: "🎨",
+  },
+  {
+    title: "Mobile App Development",
+    desc: "Building cross-platform mobile apps using Flutter and native technologies.",
+    icon: "📱",
+  },
+  {
+    title: "Website Maintenance & Optimization",
+    desc: "Ongoing site maintenance, performance tuning, and SEO optimization for lasting impact.",
+    icon: "🛠️",
+  },
+];
+
+export const trustedCompanies = [
+  {
+    name: "Eyemax Opticals",
+    image: "/assests/images/eyemax.jpg",
+    description: "Ecommerce web platform for optical products with prescription management.",
+  },
+  {
+    name: "Lenshut Opticals",
+    image: "/assests/images/lenshut.jpg",
+    description: "Online optics store with virtual try-on and custom frame recommendations.",
+  },
+  {
+    name: "Bheemeswara Ambulance",
+    image: "/assests/images/ambulance.png",
+    description: "Emergency response and ambulance service management system.",
   },
 ];
