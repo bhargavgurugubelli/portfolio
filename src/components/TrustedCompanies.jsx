@@ -28,24 +28,43 @@ export default function TrustedCompanies() {
         ))}
       </div>
 
-      {/* Mobile horizontal scroll */}
-      <div className="md:hidden overflow-x-auto pb-4">
-        <div className="flex gap-6 px-2 min-w-max">
-          {trustedCompanies.map((company) => (
-            <div key={company.name} className="flex items-center justify-center flex-shrink-0">
-              <div className="w-28 h-28 flex items-center justify-center rounded-2xl bg-[#0b1220] border border-white/[0.07] overflow-hidden">
-                {company.image ? (
-                  <img
-                    src={company.image}
-                    alt={company.name}
-                    className="w-full h-full object-contain"
-                  />
-                ) : (
-                  <span className="text-4xl">{company.logo}</span>
-                )}
+      {/* Mobile marquee auto-scroll */}
+      <div className="md:hidden overflow-hidden py-4">
+        <div className="relative">
+          <div className="flex gap-6 animate-marquee">
+            {/* First set of companies */}
+            {trustedCompanies.map((company) => (
+              <div key={`first-${company.name}`} className="flex items-center justify-center flex-shrink-0">
+                <div className="w-28 h-28 flex items-center justify-center rounded-2xl bg-[#0b1220] border border-white/[0.07] overflow-hidden">
+                  {company.image ? (
+                    <img
+                      src={company.image}
+                      alt={company.name}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <span className="text-4xl">{company.logo}</span>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {trustedCompanies.map((company) => (
+              <div key={`second-${company.name}`} className="flex items-center justify-center flex-shrink-0">
+                <div className="w-28 h-28 flex items-center justify-center rounded-2xl bg-[#0b1220] border border-white/[0.07] overflow-hidden">
+                  {company.image ? (
+                    <img
+                      src={company.image}
+                      alt={company.name}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <span className="text-4xl">{company.logo}</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
