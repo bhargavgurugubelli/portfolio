@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import AboutFortynx from "./components/AboutFortynx";
 import Skills from "./components/Skills";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import TrustedCompanies from "./components/TrustedCompanies";
-import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -29,6 +29,8 @@ export default function App() {
       <Divider />
       <About />
       <Divider />
+      <AboutFortynx />
+      <Divider />
       <Skills />
       <Divider />
       <Services />
@@ -36,8 +38,6 @@ export default function App() {
       <Projects />
       <Divider />
       <TrustedCompanies />
-      <Divider />
-      <Certifications />
       <Divider />
       <Contact />
       <Footer />

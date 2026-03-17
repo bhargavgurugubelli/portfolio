@@ -4,10 +4,56 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bhargavkrishna Gurugubelli - Founder of FortyNx, a startup providing professional web services and digital solutions. Full Stack Developer & Tech Entrepreneur specializing in React, Django, and Flutter." />
-    <meta name="keywords" content="full stack developer, web developer, AI engineer, machine learning, React, Django, Flutter, Python, JavaScript, portfolio" />
+    
+    <!-- Basic SEO -->
+    <title>Bhargavkrishna Gurugubelli - Full Stack Developer & FortyNx Founder</title>
+    <meta name="description" content="Bhargavkrishna Gurugubelli is a Full Stack Developer, AI Engineer, and the Founder of FortyNx, a startup building modern web apps like QuickBill." />
     <meta name="author" content="Bhargavkrishna Gurugubelli" />
-    <title>Bhargavkrishna Gurugubelli - FortyNx Founder & Tech Entrepreneur</title>
+    <link rel="canonical" href="https://bhargavgurugubelli.github.io/portfolio-website/" />
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://bhargavgurugubelli.github.io/portfolio-website/" />
+    <meta property="og:title" content="Bhargavkrishna Gurugubelli - Founder of FortyNx" />
+    <meta property="og:description" content="Full Stack Developer & AI Engineer specializing in React, Django, and Flutter building scalable products like QuickBill." />
+    
+    <!-- Structure Data: Person & Organization (Interconnected) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://bhargavgurugubelli.github.io/portfolio-website/#bhargav",
+          "name": "Bhargavkrishna Gurugubelli",
+          "alternateName": "Bhargav Gurugubelli",
+          "jobTitle": "Founder & Full Stack Developer",
+          "url": "https://bhargavgurugubelli.github.io/portfolio-website/",
+          "sameAs": [
+            "https://github.com/bhargavgurugubelli",
+            "https://wa.me/917901247450"
+          ],
+          "worksFor": {
+            "@id": "https://fortynx.in/#organization"
+          },
+          "knowsAbout": ["Full Stack Development", "React", "Django", "Machine Learning", "Cybersecurity"]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://fortynx.in/#organization",
+          "name": "FortyNx",
+          "url": "https://fortynx.in/",
+          "founder": {
+            "@id": "https://bhargavgurugubelli.github.io/portfolio-website/#bhargav"
+          },
+          "makesOffer": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity" } }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -6,14 +6,14 @@ export default function Projects() {
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
       <SectionHeader
-        label="What I've Built"
-        title="My Projects"
-        desc="Real-world applications demonstrating my skills across different domains."
+        label="Engineering Portfolio"
+        title="Featured Products & Solutions"
+        desc="Scalable applications architecture and digital products engineered for businesses."
       />
 
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
-          <div
+          <article
             key={project.title}
             className="glow-card bg-[#111827] rounded-2xl p-6 relative overflow-hidden group"
           >
@@ -56,7 +56,7 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

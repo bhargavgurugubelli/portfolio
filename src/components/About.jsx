@@ -17,11 +17,9 @@ export { SectionHeader };
 export default function About() {
   const infoItems = [
     { label: "Full Name", value: personalInfo.name },
-    { label: "Date of Birth", value: personalInfo.dob },
     { label: "Location", value: personalInfo.location },
     { label: "Email", value: personalInfo.email },
-    { label: "Phone", value: personalInfo.phone },
-    { label: "Status", value: "Available for Work" },
+    { label: "Status", value: "Founder at FortyNx" },
   ];
 
   return (
@@ -38,7 +36,7 @@ export default function About() {
       </div>
 
       {/* Info grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
         {infoItems.map(({ label, value }) => (
           <div
             key={label}

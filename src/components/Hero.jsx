@@ -27,7 +27,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#4f8eff]/[0.08] border border-[#4f8eff]/20 text-[#4f8eff] text-xs font-semibold px-4 py-1.5 rounded-full tracking-widest uppercase mb-6 animate-[fadeUp_0.6s_ease_both]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00e5c0] animate-[pulseDot_2s_infinite]" />
-            {personalInfo.available ? "Open to Work" : "Not Available"}
+            {personalInfo.available ? "Accepting Projects" : "Not Available"}
           </div>
 
           {/* Name */}
@@ -82,7 +82,7 @@ export default function Hero() {
                 key={label}
                 href={href}
                 target="_blank"
-                rel="noreferrer"
+                rel={`noreferrer ${href?.includes('github') || href?.includes('linkedin') ? 'me' : ''}`}
                 title={label}
                 className="w-10 h-10 rounded-lg bg-[#111827] border border-white/[0.07] hover:border-[#4f8eff]/40 flex items-center justify-center text-[#7a8ba8] hover:text-[#4f8eff] transition-all duration-200 hover:-translate-y-0.5"
               >
@@ -117,7 +117,7 @@ export default function Hero() {
 
               {/* Stats row */}
               <div className="z-10 flex gap-5 mt-2 text-center">
-                {[["4+", "Projects"], ["3+", "Certs"], ["2+", "Yrs Exp"]].map(([num, label]) => (
+                {[["4+", "Projects"], ["2+", "Yrs Exp"]].map(([num, label]) => (
                   <div key={label}>
                     <p className="font-syne font-bold text-white text-sm">{num}</p>
                     <p className="text-[#5c6e87] text-[10px]">{label}</p>

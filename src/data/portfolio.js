@@ -4,7 +4,7 @@ export const personalInfo = {
   title: "Full Stack Developer & AI&ML Engineer",
   tagline: "Building FortyNx - Professional web services and digital solutions for businesses",
   about:
-    "I'm a passionate entrepreneur and full-stack developer who founded FortyNx, a startup specializing in comprehensive web services and digital solutions. With expertise in React, Django, Flutter, and Machine Learning, I lead the development of cutting-edge web applications, ecommerce platforms, and mobile solutions that drive business growth. Currently leading FortyNx's mission to deliver exceptional digital experiences for businesses worldwide.",
+    "I'm a passionate full-stack developer and technical founder. I specialize in building robust digital products, leveraging my expertise in React, Django, and modern cloud architecture to help businesses bridge the gap between their ideas and execution.",
   location: "Srikakulam, India",
   email: "gurugubellibhargav@gmail.com",
   phone: "+91 7901247450",
@@ -19,50 +19,39 @@ export const personalInfo = {
 
 export const skills = [
   {
-    category: "Frontend",
+    category: "Frontend Architecture",
     icon: "🖥️",
     items: [
-      { name: "HTML5", proficiency: "Expert" },
-      { name: "CSS3", proficiency: "Expert" },
-      { name: "JavaScript", proficiency: "Expert" },
-      { name: "ReactJS", proficiency: "Advanced" },
-      { name: "UI/UX", proficiency: "Advanced" },
+      { name: "React.js", proficiency: "Expert" },
+      { name: "Vite / Next.js", proficiency: "Advanced" },
+      { name: "TailwindCSS", proficiency: "Expert" },
+      { name: "Responsive UI/UX", proficiency: "Advanced" },
+      { name: "State Management", proficiency: "Advanced" },
     ],
   },
   {
-    category: "Backend",
+    category: "Backend & Systems",
     icon: "⚙️",
     items: [
       { name: "Python", proficiency: "Expert" },
-      { name: "Django", proficiency: "Advanced" },
-      { name: "SQL", proficiency: "Advanced" },
+      { name: "Django & DRF", proficiency: "Advanced" },
+      { name: "PostgreSQL / SQL", proficiency: "Advanced" },
+      { name: "RESTful APIs", proficiency: "Expert" },
     ],
   },
   {
-    category: "Mobile & ML",
+    category: "Mobile & Specialized",
     icon: "📱",
     items: [
-      { name: "Flutter", proficiency: "Advanced" },
-      { name: "Machine Learning", proficiency: "Advanced" },
-      { name: "AI", proficiency: "Advanced" },
-      { name: "Image Processing", proficiency: "Intermediate" },
+      { name: "Flutter (Cross-Platform)", proficiency: "Advanced" },
+      { name: "Machine Learning (AI)", proficiency: "Advanced" },
+      { name: "Cloud Architecture", proficiency: "Intermediate" },
+      { name: "Computer Vision", proficiency: "Intermediate" },
     ],
   },
 ];
 
 export const projects = [
-  {
-    title: "Disease Detection of Fruits",
-    category: "Machine Learning",
-    description:
-      "Identifies fruit diseases using image processing and ML. Helps farmers detect infections early to reduce crop loss.",
-    tags: ["Python", "ML", "Image Processing"],
-    icon: "🍎",
-    color: "from-emerald-500/20 to-teal-500/10",
-    accent: "#10b981",
-  },
-  
-  
   {
     title: "QuickBill - Restaurant Billing Software",
     category: "Full-Stack Development",
@@ -194,7 +183,7 @@ export const trustedCompanies = [
   {
     name: "Lenshut Opticals",
     image: "/assests/images/lenshut.jpg",
-    description: "Online optics store with virtual try-on and custom frame recommendations.",
+    description: "Online optical store with virtual try-on and custom frame recommendations.",
   },
   {
     name: "Bheemeswara Ambulance",

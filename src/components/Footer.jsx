@@ -9,12 +9,12 @@ export default function Footer() {
         <div>
           <span className="font-syne font-extrabold text-lg text-white">BG</span>
           <span className="text-[#4f8eff]">.</span>
-          <p className="text-[#5c6e87] text-xs mt-1">Full Stack Developer & ML Engineer</p>
+          <p className="text-[#5c6e87] text-xs mt-1">Full Stack Developer & AI Engineer</p>
         </div>
 
         {/* Links */}
         <nav className="flex gap-6 text-xs text-[#5c6e87]">
-          {["About", "Skills", "Projects", "Trusted Companies", "Certifications", "Contact"].map((l) => (
+          {["About", "FortyNx", "Skills", "Projects", "Trusted Companies", "Contact"].map((l) => (
             <a
               key={l}
               href={`#${l.toLowerCase()}`}
