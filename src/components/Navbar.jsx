@@ -48,7 +48,7 @@ export default function Navbar() {
           href={`mailto:${personalInfo.email}`}
           className="hidden md:inline-flex items-center gap-2 bg-[#4f8eff]/10 hover:bg-[#4f8eff]/20 border border-[#4f8eff]/25 text-[#4f8eff] text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200"
         >
-          Hire Me
+          Start a Project
         </a>
 
         {/* Mobile Toggle */}
@@ -77,7 +77,7 @@ export default function Navbar() {
             href={`mailto:${personalInfo.email}`}
             className="block mt-4 text-center bg-[#4f8eff]/10 border border-[#4f8eff]/25 text-[#4f8eff] text-sm font-medium px-4 py-2.5 rounded-lg"
           >
-            Hire Me
+            Start a Project
           </a>
         </div>
       )}
